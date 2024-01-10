@@ -126,7 +126,7 @@ def main():
                 with open(args.output_path, 'w') as file:
                     file.write(rendered_content)
 
-            print(f"{args.output_path} generated successfully")
+            print(f"{args.output_path} generated successfully", file=sys.stderr)
         except Exception as e:
             print("Error generating:", e, file=sys.stderr)
 
